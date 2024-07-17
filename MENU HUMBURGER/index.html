@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Burguer House</title>
+</head>
+
+<body>
+
+    <!--Header-->
+    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+        <div class="w-full h-full flex flex-col justify-center items-center">
+            <img src="./assets/hamb-1.png" alt="Logo DevBurguer"
+                class="w-32 h3 rounded-full shadow-lg hover:scale-110 duration-200">
+            <h1 class="text-4xl mt-4 mb-2 font-bold text-white">
+                Burger House
+            </h1>
+            <span class="text-white font-medium">Argostraat 00, Alphen aan Den Rijn - NL </span>
+            <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+                <span class="text-white font-medium">Monday to Friday - 18:00 to 22:00 </span>
+            </div>
+            <span class="text-white font-medium px-4 py-3"> Designed By Fernando Fogaça</span>
+        </div>
+    </header>
+    <!--Fim Header-->
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">Place your Order</h2>
+
+    <!--menu-->
+    <div id="menu">
+        <main class="grid grid-cols-1 gap-7 mx-auto max-w-7xl">
+            <!--item 1-->
+            <div class="flex gap-2">
+                <img src="./assets/hamb-1.png" alt="Hamburger Lekker"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-400" />
+                <div>
+                    <p class="font-bold text-lg ">Lekker Burger</p>
+                    <p class="text-sm">Creamy cheddar sauce, slices of bacon, cheese and two burgers 160g, on a warm
+                        sesame seed bun</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold">£ 17.90</p>
+                        <button class=" bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Lekker Burger"
+                            data-price="17.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!--item 2-->
+            <div class="flex gap-2">
+                <img src="./assets/hamb-2.png" alt="Hamburger Gezellig"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-400" />
+                <div>
+                    <p class="font-bold text-lg "> Gezellig Burger</p>
+                    <p class="text-sm">Two burgers (100% beef), processed cheddar cheese,sauce mozzarella cheese, onion,
+                        slices of bacon</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold">£ 29.90</p>
+                        <button class=" bg-gray-900 px-5 rounded add-to-cart-btn" data-name=" Gezellig Burger"
+                            data-price="29.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Item 3-->
+            <div class="flex gap-2">
+                <img src="./assets/hamb-3.png" alt="Hamburger Gelukkig"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-400" />
+                <div>
+                    <p class="font-bold text-lg "> Gelukkig Burger</p>
+                    <p class="text-sm">
+                        Slices of processed cheddar cheese, sauce with mozzarella cheese, tomato, iceberg lettuce, two
+                        burgers</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold">£ 20.90</p>
+                        <button class=" bg-gray-900 px-5 rounded add-to-cart-btn" data-name=" Gezellig Burger"
+                            data-price="29.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Item 4-->
+            <div class="flex gap-2">
+                <img src="./assets/hamb-4.png" alt="Hamburger KIP"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-400" />
+                <div>
+                    <p class="font-bold text-lg "> Kip Burger</p>
+                    <p class="text-sm">
+                        Sliced bacon, lettuce, tomato, cheddar flavored processed cheese and 100% chicken breast meat,
+                    </p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold">£ 19.90</p>
+                        <button class=" bg-gray-900 px-5 rounded add-to-cart-btn" data-name=" Gezellig Burger"
+                            data-price="29.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="mx-auto max-w-7xl px-2 my-2">
+            <h2 class="font-bold text-3xl">
+                Drinks
+            </h2>
+        </div>
+        <!--Grid Drinks-->
+        <div class="flex gap-2">
+            <img src="./assets/hamb-2.png" alt="Hamburger Gezellig"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-400" />
+            <div>
+                <p class="font-bold text-lg "> Gezellig Burger</p>
+                <p class="text-sm">Two burgers (100% beef), processed cheddar cheese,sauce mozzarella cheese, onion,
+                    slices of bacon</p>
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold">£ 29.90</p>
+                    <button class=" bg-gray-900 px-5 rounded add-to-cart-btn" data-name=" Gezellig Burger"
+                        data-price="29.90">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
