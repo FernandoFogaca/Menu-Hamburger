@@ -1,0 +1,10 @@
+debug*.log
+logs
+logs
+tmp
+backup
+node_modules 
+vendor
+# .gitignore
+config.json
+assets
